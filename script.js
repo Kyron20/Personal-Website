@@ -1,3 +1,5 @@
+/*
+//Old code for the contact form.
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     const form = this;
     const formData = new FormData(form);
@@ -30,22 +32,32 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     // Prevent the default form submission
     e.preventDefault();
 });
-
+*/ 
 
 // Smooth scrolling when clicking navigation links
 document.querySelectorAll('.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
-        let targetPosition = document.querySelector(targetId).offsetTop;
-        
-        
-        if (targetId === '#Education') {
-            targetPosition -= 20; //Was added to make it so when I click education, it correctly aligns with the position I need to showcase the full education section. Can adjust number as needed.
+        let targetElement = document.querySelector(targetId);
+
+        if (!targetElement) {
+            console.error(`Target element ${targetId} not found`);
+            return;
         }
-        
-        const startPosition = window.pageYOffset; 
+
+        let targetPosition = targetElement.offsetTop;
+
+        if (targetId === '#Education') {
+            targetPosition -= 20; // Adjust number as needed
+        }
+
+        if (targetId === '#projects') {
+            targetPosition -= 20; // Adjust number as needed
+        }
+
+        const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
         const duration = 1000; // Adjust scrolling speed here (in milliseconds)
         let start = null;
@@ -54,7 +66,9 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
             if (!start) start = timestamp;
             const progress = timestamp - start;
             window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-            if (progress < duration) window.requestAnimationFrame(step);
+            if (progress < duration) {
+                window.requestAnimationFrame(step);
+            }
         }
 
         window.requestAnimationFrame(step);
