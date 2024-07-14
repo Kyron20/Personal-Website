@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Adjust max-width as needed */
+    max-width: 90%; /* Adjust max-width as needed */
     margin: 0 auto;
 }
 
@@ -50,17 +50,21 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 header nav ul li {
     margin-left: 20px;
+    white-space: nowrap; /* Prevent items from wrapping prematurely */
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
+    padding: 10px 15px; /* Adjust padding for better touch target */
 }
+
 
 header nav ul li a:hover {
     text-decoration: underline;
@@ -158,6 +162,12 @@ section#projects {
     flex: 1;
     text-align: center;
     margin-right: 30%;
+}
+
+@media (max-width: 1400px) {
+    .about p {
+        margin-right: 10%; /* Adjust the maximum width for larger screens */
+    }
 }
 
 form {
