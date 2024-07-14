@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #2c2748;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h2 {
+    text-align: center; /* Align text center */
+}
+
+h3 {
+    font-size: 24px;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: #2c2748;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+}
+
+section:nth-of-type(odd) {
+    background: #f4f4f4;
+}
+
+section:nth-of-type(even) {
+    background: #fff;
+}
+
+
+.ProjectTitle {
+
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.EducationTitle {
+
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.headerName {
+    font-size: 14px;
+    text-align: left; /* Center align headerName */
+}
+
+.Educations {
+    border: 2px solid #000000;
+    margin: 1em 0;
+    padding: 1em;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+section#Education {
+    background: #f4f4f4;
+}
+
+.project {
+    border: 2px solid #000000;
+    margin: 1em 0;
+    padding: 1em;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+section#projects {
+    background: #f4f4f4;
+}
+
+.aboutTitle {
+    text-align: center;
+    font-size: 24px;
+}
+
+.about {
+    margin: 1em 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px; /* Adds space between the image and the text */
+    margin-left: 30%;
+}
+
+
+.imageLink {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.imageLink img {
+    width: 50px;
+    height: auto;    
+    margin: 0 10px;
+}
+
+.about p {
+    flex: 1;
+    text-align: center;
+    margin-right: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    padding: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7em;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
