@@ -167,6 +167,15 @@ section#projects {
 @media (max-width: 1400px) {
     .about p {
         margin-right: 10%; /* Adjust the maximum width for larger screens */
+        text-align: center;
+
+    
+    }
+    .about img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px; /* Adds space between the image and the text */
+        
     }
 }
 
