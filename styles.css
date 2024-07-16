@@ -4,6 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     background: #2c2748;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,6 +39,7 @@ header {
     align-items: center;
     max-width: 90%; /* Adjust max-width as needed */
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -96,8 +98,8 @@ section:nth-of-type(even) {
     border: 2px solid #000000;
     margin: 1em 0;
     padding: 1em;
-    margin-right: 17%;
-    margin-left: 17%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 section#Education, section#projects {
@@ -160,6 +162,7 @@ section#Education, section#projects {
     .about img, .about p {
         margin: 0; /* Remove margin for a more compact layout */
     }
+    
 }
 
 form {
@@ -167,8 +170,8 @@ form {
     flex-direction: column;
     border: 2px solid #000000;
     padding: 1em;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
 }
 
@@ -181,6 +184,7 @@ form input, form textarea {
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
+    text-align: center;
 }
 
 form button {
